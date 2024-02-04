@@ -15,7 +15,7 @@ To install Python dependencies:
 pip install -r requirements.txt
 ```
 
-**Note that the complete data file and model training logs/checkpoints can be download from link :https://pan.baidu.com/s/1qFRuJNNmcL0pC1AtjFjbaw  (abrz). and google drive with link: [https://drive.google.com/drive/folders/1xWVVJRfnm_wIgUpbn9ftsW4K5XKU0i0-?usp=share_link](https://drive.google.com/drive/folders/1xWVVJRfnm_wIgUpbn9ftsW4K5XKU0i0-?usp=sharing).**
+**Note that the complete data file and model training logs/checkpoints can be download from link : https://pan.baidu.com/s/1oPoYeFsia3ngIsrSEWgX_w?pwd=refg (refg).**
 
 
 ## Data
@@ -52,8 +52,7 @@ For image downloading, please visit http://resource.deepwise.com/xraychallenge/t
 ## Prepare Data and Weights 
 
 Download five files: pretrained_mimic_diffusion, mimic_models, paired data, images_transunet_minus1/unet-6v-latest.pt, images_transunet_padchest_minus1/unet-6v-latest.pt
-from https://pan.baidu.com/s/1qFRuJNNmcL0pC1AtjFjbaw  (abrz) or: [https://drive.google.com/drive/folders/1xWVVJRfnm_wIgUpbn9ftsW4K5XKU0i0-?usp=share_link](https://drive.google.com/drive/folders/1xWVVJRfnm_wIgUpbn9ftsW4K5XKU0i0-?usp=sharing).**
-
+from  https://pan.baidu.com/s/1oPoYeFsia3ngIsrSEWgX_w?pwd=refg (refg).
 Put them into our root dir.
 
 
