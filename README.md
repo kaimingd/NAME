@@ -46,12 +46,13 @@ The [PadChest](https://arxiv.org/abs/1901.07441) is publicly available at https:
 
 **3. ChestX-Det-10 dataset**
 
-ChestX-Det10 is a subset with instance-level box annotations of NIH ChestX-14 https://www.nih.gov/news-events/news-releases/nih-clinical-center-provides-one-largest-publicly-available-chest-x-ray-datasets-scientific-community.
+ChestX-Det10 is a subset with instance-level box annotations of [NIH ChestX-14](https://www.nih.gov/news-events/news-releases/nih-clinical-center-provides-one-largest-publicly-available-chest-x-ray-datasets-scientific-community).
 For image downloading, please visit http://resource.deepwise.com/xraychallenge/train_data.zip and http://resource.deepwise.com/xraychallenge/test_data.zip.
 
 ## Prepare Data and Weights 
 
 Download three files: pretrained_mimic_diffusion, mimic_models and paired data from https://pan.baidu.com/s/1qFRuJNNmcL0pC1AtjFjbaw  (abrz) or: [https://drive.google.com/drive/folders/1xWVVJRfnm_wIgUpbn9ftsW4K5XKU0i0-?usp=share_link](https://drive.google.com/drive/folders/1xWVVJRfnm_wIgUpbn9ftsW4K5XKU0i0-?usp=sharing).**
+
 Put them into our root dir.
 
 
@@ -59,15 +60,15 @@ Put them into our root dir.
 
 **1. Stage1**
 
-run the following command to perform stage1 training on ControlNet to train a rib constraint generative model
+Run the following command to perform stage1 training on ControlNet to train a rib constraint generative model
 
 `python stage1_train.py ` 
 
-run the following command to perform stage1 testing on ControlNet to generate paired normal/diseased data
+Run the following command to perform stage1 testing on ControlNet to generate paired normal/diseased data
 
 `python stage1_generate_paired_image.py ` 
 
-run the following command to perform stage1 post-precessing paired normal/diseased data
+Run the following command to perform stage1 post-precessing paired normal/diseased data
 
 `python minus.py ` 
 
@@ -76,23 +77,23 @@ run the following command to perform stage1 post-precessing paired normal/diseas
 
 **2. Stage2**
 
-run the following command to perform stage2 training on Transunet(trained on train split of Generated paired data) to train a pathology localization and segmentation model
+Run the following command to perform stage2 training on Transunet(trained on train split of Generated paired data) to train a pathology localization and segmentation model
 
 `python stage2_train.py ` 
 
-run the following command to perform stage2 testing on Transunet(inference on test split of Generated paired data) to test a pathology localization and segmentation model
+Run the following command to perform stage2 testing on Transunet(inference on test split of Generated paired data) to test a pathology localization and segmentation model
 
 `python stage2_test_generateddata.py ` 
 
-run the following command to perform stage2 testing on Transunet(inference on test split of CheXpert dataset) to test a pathology localization and segmentation model
+Run the following command to perform stage2 testing on Transunet(inference on test split of CheXpert dataset) to test a pathology localization and segmentation model
 
 `python stage2_test_chexpert.py ` 
 
-run the following command to perform stage2 testing on Transunet(inference on test split of ChestX-Det-10 dataset) to test a pathology localization and segmentation model
+Run the following command to perform stage2 testing on Transunet(inference on test split of ChestX-Det-10 dataset) to test a pathology localization and segmentation model
 
 `python stage2_test_chestdet.py ` 
 
-run the following command to perform stage2 testing on Transunet(inference on test split of PadChest dataset) to test a pathology localization and segmentation model
+Run the following command to perform stage2 testing on Transunet(inference on test split of PadChest dataset) to test a pathology localization and segmentation model
 
 `python stage2_test_padchest.py ` 
 
