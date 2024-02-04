@@ -6,7 +6,7 @@ The official codes for [**Knowledge-enhanced Visual-Language Pre-training on Che
 To clone all files:
 
 ```
-git clone 
+git clone git@github.com:kaimingd/NAME.git
 ```
 
 To install Python dependencies:
@@ -36,7 +36,7 @@ The main data (CheXpert data) supporting the results of this study are available
 
 **1. CheXpert Dataset**
 
-The CheXpert **test** dataset has recently been made public, and can be found by following the steps in the [cheXpert-test-set-labels](https://github.com/rajpurkarlab/cheXpert-test-set-labels) repository. 
+The CheXpert test dataset has recently been made public, and can be found by following the steps in the [cheXpert-test-set-labels](https://github.com/rajpurkarlab/cheXpert-test-set-labels) repository. 
 
 **2. PadChest Dataset**
 
@@ -51,7 +51,8 @@ For image downloading, please visit http://resource.deepwise.com/xraychallenge/t
 
 ## Prepare Data and Weights 
 
-Download three files: pretrained_mimic_diffusion, mimic_models and paired data from https://pan.baidu.com/s/1qFRuJNNmcL0pC1AtjFjbaw  (abrz) or: [https://drive.google.com/drive/folders/1xWVVJRfnm_wIgUpbn9ftsW4K5XKU0i0-?usp=share_link](https://drive.google.com/drive/folders/1xWVVJRfnm_wIgUpbn9ftsW4K5XKU0i0-?usp=sharing).**
+Download five files: pretrained_mimic_diffusion, mimic_models, paired data, images_transunet_minus1/unet-6v-latest.pt, images_transunet_padchest_minus1/unet-6v-latest.pt
+from https://pan.baidu.com/s/1qFRuJNNmcL0pC1AtjFjbaw  (abrz) or: [https://drive.google.com/drive/folders/1xWVVJRfnm_wIgUpbn9ftsW4K5XKU0i0-?usp=share_link](https://drive.google.com/drive/folders/1xWVVJRfnm_wIgUpbn9ftsW4K5XKU0i0-?usp=sharing).**
 
 Put them into our root dir.
 
