@@ -1,12 +1,12 @@
-# NAME
-The official codes for [**Knowledge-enhanced Visual-Language Pre-training on Chest Radiology Images**](https://arxiv.org/pdf/2302.14042.pdf).
+# PIXEL
+The official codes for **Prompt-driven Healthy/Diseased Image Pairs Enabling Pixel-level Chest X-ray Pathology Localization**.
 
 ## Dependencies
 
 To clone all files:
 
 ```
-git clone git@github.com:kaimingd/NAME.git
+git clone git@github.com:kaimingd/PIXEL.git
 ```
 
 To install Python dependencies:
