@@ -11,7 +11,6 @@ git clone git@github.com:kaimingd/PIXEL.git
 
 To install Python dependencies:
 
-conda create -n pixel python=3.8
 
 ```
 conda create -n pixel python=3.8
