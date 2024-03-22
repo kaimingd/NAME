@@ -57,7 +57,7 @@ For image downloading, please visit http://resource.deepwise.com/xraychallenge/t
 
 Download five files: pretrained_mimic_diffusion, mimic_models, paired data, images_transunet_minus1/unet-6v-latest.pt, images_transunet_padchest_minus1/unet-6v-latest.pt
 from  https://pan.baidu.com/s/1oPoYeFsia3ngIsrSEWgX_w?pwd=refg (refg).
-Put them into our root dir. You may change root path name as needed.(Our root is /hhd/1/dkm/NAME)
+Put them into our root dir. You may change root path name as needed.(Our root is /hhd/1/dkm/)
 
 
 ## Training and testing
