@@ -19,7 +19,7 @@ from cldm.ddim_hacked import DDIMSampler
 apply_hed = HEDdetector()
 
 model = create_model('./mimic_models/cldm_v15.yaml').cpu()
-model.load_state_dict(load_state_dict('./mimic_models/epoch=3-step=40387.ckpt', location='cuda'))
+model.load_state_dict(load_state_dict('./mimic_models/epoch=3-step=40387.ckpt', location='cuda'),strict=False)
 model = model.cuda()
 ddim_sampler = DDIMSampler(model)
 # CUDA_VISIBLE_DEVICES=4 python inference_hed2image.py
